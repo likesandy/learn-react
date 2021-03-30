@@ -10,5 +10,5 @@
 
 ### 邂逅 React 开发和初体验
 
-- [01_React 的介绍和特点](01_邂逅React开发和初体验/md/01_邂逅React开发和初体验.md)
-- [02_React 的依赖以及作用](02_React的依赖以及作用/md/02_React的依赖以及作用.md)
+- [React 的介绍和特点](01_邂逅React开发和初体验/md/01_邂逅React开发和初体验.md)
+- [React 的依赖以及作用](02_React的依赖以及作用/md/02_React的依赖以及作用.md)

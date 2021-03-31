@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      class App extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            // 1.在{}中可以显示
+            message: "codertao",
+            age: 19,
+
+            // 2.在{}中不能显示
+            test1: null,
+            test2: undefined,
+            flag: true,
+
+            // 3.对象不能作为jsx的子类
+            person: {
+              name: "codertao",
+              age: 19,
+            },
+          };
+        }
+
+        render() {
+          return (
+            <div>
+              <h2>{this.state.message}</h2>
+              <h2>{this.state.age}</h2>
+
+              <h2>{this.state.test1}</h2>
+              <h2>{this.state.test2}</h2>
+              <h2>{this.state.flag}</h2>
+
+              <h2>{this.state.test1 + ""}</h2>
+              <h2>{this.state.test2 + ""}</h2>
+              <h2>{this.state.flag.toString()}</h2>
+              <h2>{this.state.flag ? "显示" : null}</h2>
+
+              {/*<h2>{this.state.person}</h2>*/}
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<App />, document.querySelector("#app"));
+    </script>
+  </body>
+</html>

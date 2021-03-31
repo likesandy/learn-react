@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      class App extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            name: "codertao",
+            age: 19,
+            flag: true,
+          };
+        }
+
+        render() {
+          const { name, age, flag } = this.state;
+          return (
+            <div>
+              {/*1.运算表达式*/}
+              <h2>{name + "" + age}</h2>
+              <h2>{10 * 10}</h2>
+
+              {/*2.三元表达式*/}
+              <h2>{flag ? "欢迎回来" : "请先登录"}</h2>
+
+              {/*3.进行函数调用*/}
+              <h2>{this.getFn()}</h2>
+            </div>
+          );
+        }
+
+        getFn() {
+          return this.state.name + "" + this.state.age;
+        }
+      }
+
+      ReactDOM.render(<App />, document.querySelector("#app"));
+    </script>
+  </body>
+</html>

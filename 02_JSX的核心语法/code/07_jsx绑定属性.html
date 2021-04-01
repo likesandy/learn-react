@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      function getSizeImages(imgUrl, size) {
+        return imgUrl + `?param=${size}x${size}`;
+      }
+
+      class App extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            title: "标题",
+            imgUrl:
+              "http://p1.music.126.net/iU1BShTnU4Q3aeqTXstoGg==/109951165824999173.jpg",
+            link: "http://www.baidu.com",
+            flag: true,
+          };
+        }
+
+        render() {
+          const { title, imgUrl, link, flag } = this.state;
+          return (
+            <div>
+              {/*1.绑定普通属性*/}
+              <h2 title={title}>标题</h2>
+              <img src={getSizeImages(imgUrl, 300)} alt="" />
+              <a href={link} target="_blank">
+                百度一下
+              </a>
+
+              {/*2.绑定class*/}
+              <div class="box">div</div>
+              {/*注意点:在jsx中使用js中特有的关键字会产生警告,jsx中会使用其他的名称来替代js中的关键字*/}
+              <div className={"box" + (flag ? "title" : "")}>div</div>
+              <label for=""></label>
+
+              {/*3.绑定style*/}
+              {/*注意点:jsx中style中导入的是一个对象,对象里面是key,value的样式,css中使用-连接词的一些属性会变成驼峰式命名*/}
+              <div style={{ color: "red", fontSize: "30px" }}>div</div>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<App />, document.querySelector("#app"));
+    </script>
+  </body>
+</html>

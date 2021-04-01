@@ -15,5 +15,6 @@
 
 ### JSX 的核心语法
 
-- [jsx 语法的介绍](02_JSX的核心语法一/md/01_jsx语法的介绍.md)
-- [jsx 的使用](02_JSX的核心语法一/md/02_jsx的使用.md)
+- [jsx 语法的介绍](02_JSX的核心语法/md/01_jsx语法的介绍.md)
+- [jsx 的使用](02_JSX的核心语法/md/02_jsx的使用.md)
+- [React 事件绑定](02_JSX的核心语法/md/03_React事件绑定.md)

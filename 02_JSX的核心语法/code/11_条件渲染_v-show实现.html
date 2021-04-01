@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      class App extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            isLogin: true,
+          };
+        }
+
+        render() {
+          const { isLogin } = this.state;
+          const titleDisplayValue = isLogin ? "block" : "none";
+          return (
+            <div>
+              <button onClick={(e) => this.btnClick()}>
+                {isLogin ? "退出" : "登录"}
+              </button>
+              <h2 style={{ display: titleDisplayValue }}>你好啊codertao</h2>
+            </div>
+          );
+        }
+
+        btnClick() {
+          this.setState({
+            isLogin: !this.state.isLogin,
+          });
+        }
+      }
+
+      ReactDOM.render(<App />, document.querySelector("#app"));
+    </script>
+  </body>
+</html>

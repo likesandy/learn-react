@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      class App extends React.Component {
+        constructor() {
+          super();
+          this.state = {};
+        }
+
+        render() {
+          // jsx -> createElement函数 -> ReactElement对象(虚拟DOM) -> ReactDom.render -> 真实DOM
+          let ReactElement = (
+            <div>
+              <div className="header">
+                <h1 title="标题">标题</h1>
+              </div>
+              <div className="content">
+                <h2>页面内容</h2>
+                <button>按钮</button>
+                <a href="http://www.baidu.com">百度一下</a>
+              </div>
+              <div className="footer">
+                <h3>页面尾部</h3>
+              </div>
+            </div>
+          );
+          console.log(ReactElement);
+          return ReactElement;
+        }
+      }
+
+      ReactDOM.render(<App />, document.querySelector("#app"));
+    </script>
+  </body>
+</html>

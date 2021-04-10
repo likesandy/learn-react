@@ -1,4 +1,4 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./03_组件间的通信/03_父传子组件_函数组件";
+import App from "./06_跨组件通信/03_跨组件通信_多个context";
 ReactDOM.render(<App />, document.querySelector("#root"));

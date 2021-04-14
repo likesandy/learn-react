@@ -23,8 +23,8 @@ export default class App extends Component {
       </div>
     );
   }
-  shouldComponentUpdate(nextProps, nextState) {
-    if (this.state.counter !== nextState.counter) {
+  shouldComponentUpdate(newProps, newState) {
+    if (this.state.counter !== newState.counter) {
       return true;
     }
     return false;

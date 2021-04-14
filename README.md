@@ -31,3 +31,10 @@
 - [React 组件的定义方式](05_React组件化开发/md/02_React组件的定义方式.md)
 - [组件的生命周期函数](05_React组件化开发/md/03_组件的生命周期函数.md)
 - [跨组件通信](05_React组件化开发/md/04_跨组件通信.md)
+
+### setState 详细解析和 React 性能优化
+
+- [setSate 详解](05_React组件化开发/md/05_setSate详解.md)
+- [React 更新机制](05_React组件化开发/md/06_React更新机制.md)
+- [列表中 keys 的意义](05_React组件化开发/md/07_列表中keys的意义.md)
+- [shouldComponentUpdate 的使用](05_React组件化开发/md/08_shouldComponentUpdate的使用.md)

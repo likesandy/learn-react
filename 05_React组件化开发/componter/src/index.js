@@ -1,4 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./06_跨组件通信/03_跨组件通信_多个context";
+import App from "./08_React性能优化/05_memo";
+
 ReactDOM.render(<App />, document.querySelector("#root"));

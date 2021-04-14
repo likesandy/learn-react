@@ -1,0 +1,48 @@
+import React, { Component } from "react";
+
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: "Hello World",
+    };
+  }
+
+  render() {
+    const { message } = this.state;
+    return (
+      <div>
+        <h2>{message}</h2>
+        <button onClick={() => this.changeText()}>改变文本</button>
+        <Son message={message} />
+      </div>
+    );
+  }
+
+  changeText() {
+    //   this.setState({
+    //     message: "Hello React",
+    //   });
+    //   console.log(this.state.message);
+    // }
+
+    // 方式一
+    this.setState({
+      message: "Hello React",
+    });
+  }
+
+  // 方式二
+  componentDidUpdate() {
+    console.log(this.state.message);
+  }
+}
+
+const Son = (props) => {
+  const { message } = props;
+  return (
+    <div>
+      <h2>{message}</h2>
+    </div>
+  );
+};

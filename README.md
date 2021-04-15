@@ -38,3 +38,8 @@
 - [React 更新机制](05_React组件化开发/md/06_React更新机制.md)
 - [列表中 keys 的意义](05_React组件化开发/md/07_列表中keys的意义.md)
 - [shouldComponentUpdate 的使用](05_React组件化开发/md/08_shouldComponentUpdate的使用.md)
+
+### 知识补充和受控非受控组件
+
+- [ref](05_React组件化开发/md/09_ref.md)
+- [受控组件和非受控组件](05_React组件化开发/md/10_受控组件和非受控组件.md)

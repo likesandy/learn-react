@@ -31,3 +31,5 @@
 - 函数式组件是没有实例的,所以无法通过 ref 获取它们的实例
   - 但是某些时候,我们可能想要获取函数式组件中的某个 DOM 元素
   - 这个时候我们可以通过 React.forwardRef,后面也会学习 hooks 中如何使用 ref
+
+> [https://reactjs.bootcss.com/docs/refs-and-the-dom.html](https://reactjs.bootcss.com/docs/refs-and-the-dom.html)

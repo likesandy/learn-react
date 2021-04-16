@@ -62,6 +62,7 @@ export default class App extends PureComponent {
   }
 
   listenChange(e) {
+    console.log(e.target.name);
     this.setState({
       // 计算属性名
       [e.target.name]: e.target.value,

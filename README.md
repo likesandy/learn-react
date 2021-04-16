@@ -48,4 +48,4 @@
 
 - [高阶组件](05_React组件化开发/md/11_高阶组件.md)
 - [Portals 的使用](05_React组件化开发/md/12_Portals的使用.md)
-- [13_StrictMode](05_React组件化开发/md/13_StrictMode.md)
+- [StrictMode](05_React组件化开发/md/13_StrictMode.md)

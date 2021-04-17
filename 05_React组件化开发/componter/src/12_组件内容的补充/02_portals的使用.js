@@ -1,12 +1,15 @@
 import React, { PureComponent } from "react";
-import ReactDOM from "react-dom";
+import { createPortal } from "react-dom";
 
 class Modal extends PureComponent {
   render() {
-    return ReactDOM.createPortal(
-      this.props.children,
-      document.querySelector("#modal")
-    );
+    /**
+     * this.props.children:可以获取当前组件所有的子元素或者子组件
+     * createPortal接收两个参数
+     * 第一个参数: 需要渲染的内容
+     * 第二个参数: 渲染到什么地方
+     */
+    return createPortal(this.props.children, document.querySelector("#modal"));
   }
 }
 class Home extends PureComponent {

@@ -10,7 +10,7 @@ class Home extends PureComponent {
     return <div>Home</div>;
   }
   // UNSAFE_componentWillMount() {
-  //   console.log("Home UNSAFE_componentWillMount");
+  //   console.log("Home UNSAFE_componentWillMount");x
   // }
 }
 

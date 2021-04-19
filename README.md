@@ -1,5 +1,3 @@
-![imgage.png](https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=react%20%E5%9B%BE%E7%89%87&step_word=&hs=2&pn=7&spn=0&di=17380&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=3456230352%2C3263357922&os=1020448581%2C3008981289&simid=4293831931%2C837856271&adpicid=0&lpn=0&ln=1309&fr=&fmq=1618815933823_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined&copyright=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170310%2F3a009623498e468298ebe34b127b6f17.jpg%26refer%3Dhttp%3A%2F%2Fimg.mp.itc.cn%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Djpeg%3Fsec%3D1621407989%26t%3Dbcae42ebba1feb2bf97c3e1c9df58b1c&fromurl=ippr_z2C%24qAzdH3FAzdH3F4p_z%26e3Bf5i7_z%26e3Bv54AzdH3Fda80an8aAzdH3Fg9bdlacama_z%26e3Bfip4s&gsm=8&rpstart=0&rpnum=0&islist=&querylist=&force=undefined)
-
 # React 核心技术与开发实战
 
 本仓库内容根据腾讯课堂 [《React 核心技术与开发实战》](https://ke.qq.com/course/2555753) 视频整理的学习笔记，视频教程讲的特别好，配合本仓库的代码测试环境来练习，学习效果更佳.

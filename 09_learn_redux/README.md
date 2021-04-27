@@ -66,3 +66,5 @@
 - 但是所有的 reducer 都应该是纯函数，不能产生任何的副作用
 
 > [基本使用详情代码](./index.js) [结构划分详情代码](./correct.js)
+
+> [Redux 官方文档](https://redux.js.org/) [Redux 中文文档](http://cn.redux.js.org/)

@@ -94,3 +94,5 @@
 ### TransitionGroup
 
 - 当我们有一组动画时，需要将这些 CSSTransition 放入到一个 TransitionGroup 中来完成动画
+
+> 官网: http://reactcommunity.org/react-transition-group/

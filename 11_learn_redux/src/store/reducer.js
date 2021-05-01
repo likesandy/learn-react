@@ -7,7 +7,7 @@ const defaultState = {
 const reducer = (state = defaultState, action) => {
   switch (action.type) {
     case INCREASE:
-      return { ...state, counter: state.counter + action.num };
+      return { ...state, counter: state.counter + 1 };
     case REDUCE:
       return { ...state, counter: state.counter - action.num };
     default:

@@ -1,8 +1,7 @@
 import { INCREASE, REDUCE } from "./constant.js";
 
-export const increaseAction = (num) => ({
+export const increaseAction = () => ({
   type: INCREASE,
-  num,
 });
 
 export const reduceAction = (num) => ({

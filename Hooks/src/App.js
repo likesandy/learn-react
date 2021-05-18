@@ -4,6 +4,7 @@ import HookCounter from "./01_邂逅Hook/02_hook_counter";
 import HookEnhanceCounter from "./01_邂逅Hook/03_hook_enhance_counter";
 import UseStates from "./02_useState/01_多个状态的使用";
 import ComplexUseState from "./02_useState/02_复杂状态的操作";
+import Home from "./03_useEffect";
 import ClassCounterChangeTitle from "./03_useEffect/01_class实现title的修改";
 import HookCounterChangeTitle from "./03_useEffect/02_hook实现title的修改";
 import HookSubscribe from "./03_useEffect/03_hooks模拟订阅和取消订阅";
@@ -43,6 +44,7 @@ const App = () => {
       {/* <ClassCounterChangeTitle /> */}
 
       {/* 3.useEffect的使用 */}
+      <Home />
       {/* <HookCounterChangeTitle /> */}
       {/* {show && <HookSubscribe />} */}
       {/* <HookUseEffects /> */}
@@ -85,9 +87,9 @@ const App = () => {
         </ThemeContext.Provider>
       </UserContext.Provider> */}
       {/* <CustomHookDemo3 /> */}
-      <CustomHookDemo4 />
+      {/* <CustomHookDemo4 /> */}
 
-      <button onClick={() => setShow(!show)}>切换组件</button>
+      {/* <button onClick={() => setShow(!show)}>切换组件</button> */}
     </div>
   );
 };

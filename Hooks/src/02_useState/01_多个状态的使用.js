@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const UseStates = () => {
-  const [counter, setcounter] = useState(0);
-  const [age, setage] = useState(19);
-  const [movies, setmovies] = useState([
+  const [counter, setCounter] = useState(0);
+  const [age, setAge] = useState(19);
+  const [movies, setMovies] = useState([
     "大话西游",
     "喜剧之王",
     "国产凌凌漆",
